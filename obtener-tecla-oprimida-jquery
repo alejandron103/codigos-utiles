@@ -1,0 +1,36 @@
+$(document).ready(function(){
+
+$("#parrafo").click(function(){
+    $("#parrafo").animate({width:"215px"},1000,function() {
+        $(this).css("color","red")
+        
+        });
+  });
+	
+	$("#parrafo").dblclick(function(){
+	$(".ejemplo").slideToggle('slow');
+  });
+  
+  
+  $("#selector").keydown(function(){
+      
+      $("#parrafo").text("la tecla presionada es " + String.fromCharCode(event.which))
+      
+     var a =String.fromCharCode(event.which);
+     //alert(a);
+     
+      if( a > "A" && a < "Z" ){
+          
+        $("#parrafo").text("alejandro");
+          }
+      
+      else if (a > 0 && a < 9){
+          
+          alert("es un número");
+          
+          }
+      
+      
+      });
+	
+});
