@@ -34,3 +34,19 @@ $("#parrafo").click(function(){
       });
 	
 });
+
+
+//Aparecer div
+
+$(document).ready(function() {
+
+   $(".image").click(function(){
+  	$(".rta").fadeToggle("slow").delay(1000);
+});
+
+
+   
+});
+
+
+
